@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="" id="formData">
+        <input type="text" name="nume" id="nume" placeholder="nume">
+        <input type="text" name="prenume" id="prenume" placeholder="prenume">
+        <input type="text" name="email" id="email" placeholder="email">
+        <input type="text" name="parola" id="parola" placeholder="parola">
+        <button  id="submit" onclick="sendData()" >trimite datele</button>
+    </form>
+    <script>
+        let formData = document.getElementById("formData")
+        let submit = document.getElementById("submit")
+        let nume = document.getElementById("nume")
+        function sendData(){
+            event.preventDefault()
+        }
+         
+        
+        
+        const test = []
+        console.log("test 1", test)
+        
+        async function fetchData() {
+        const response = await fetch('http://localhost:3002/posts/')
+            .then(response => response.json()) 
+            .then( data  => data["data"].forEach(element => { test.push(element) })) 
+            .catch(error => console.error(error));
+        // waits until the request completes...
+            test.forEach(elem =>{
+                console.log(elem.titlu)
+            })
+         
+        }
+        fetchData()
+
+        
+        
+
+        
+       
+        
+
+       
+
+        
+        
+        
+         
+    </script>
+</body>
+</html>

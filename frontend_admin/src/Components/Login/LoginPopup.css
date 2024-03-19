@@ -1,0 +1,30 @@
+#top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    
+}
+#LoginPopup{
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+/* #loginForm{
+    
+} */
+
+#loginForm label{
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-family:sans-serif;
+    
+}
+
+input, select, textarea{
+    color: black;
+}

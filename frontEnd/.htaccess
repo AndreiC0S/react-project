@@ -1,0 +1,2 @@
+ErrorDocument 404 http://www.acwebsite.ro/index.html
+ErrorDocument 500 http://www.acwebsite.ro/index.html

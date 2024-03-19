@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>CRUD</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div style="margin:100px;" class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">CRUD</a>
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <!-- <a href="/products">products</a> -->
+      </li>
+      <li>
+        <a href="/products">Users 1</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div class="jumbotron"  style="padding:40px;">
+      <h1>Aplicatie Web Server BackEnd!</h1>
+      <p> Express + TypeScript Server</p>
+      <p> Partea de API este folosita de REACT prin web service : REST</p>
+       </div>
+  </div>
+  <div class="d-flex flex-column">
+
+    <form action="http://localhost:3002/products" method="post" class="d-flex flex-column"> Add product <br>
+      
+  
+        <input type="text" name="nume_produs" placeholder="nume_produs" required> <br>
+        
+        <input type="text" name="descriere_produs" required> <br>
+        <input type="text" name="poza_url" placeholder="product pic url" required> <br>
+        <input type="text" name="categorie_produs" placeholder="product category" required><br>
+        <input type="text" name="pret_produs" placeholder="product price" required> <br>
+      
+        <input type="submit" value="send"> 
+    </form>
+  </div>
+</body>
+</html>

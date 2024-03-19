@@ -1,0 +1,4 @@
+user: admin.a3.test
+mail: andrei_cos97@yahoo.com
+pass: $2a$10$MuhHnknvxIXtKj5S4ytqIO4wAJoaW72jbiQbJTlQRwJsAFSI1U7iS
+master: 1
